@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML</title>
+</head>
+
+<style>
+    body{
+        background-color: lightyellow;
+    }
+    #code{
+        background: black;
+        color: white;
+        width: 50%;
+    }
+    footer{
+        background-color: lightcyan;
+        color: darkgray;
+    }
+</style>
+
+<body>
+    <header>
+        <h1>O que é HTML e sua linguagem?</h1>
+    </header>
+    <hr />
+    <main>
+    <h2 id="indice"> Índice: </h2>
+        <ul>
+            <li><a href="#definicao"> Definição</a></li>
+            <li><a href="#tags"> Tags HTML</a></li>
+        <ul>
+            <li><a href="#estrutura"> Estrutura da página</a></li>
+            <li><a href="#semanticos"> Elementos semânticos</a></li>
+            <li><a href="#exemplos"> Exemplos de tags</a></li>
+        </ul>
+        </ul>
+    <hr />
+     <section>
+    
+       <h2 id="definicao"> <a href="https://pt.wikipedia.org/wiki/HTML"> Definição Wikipédia </a>: </h2>
+       
+       <p>  HTML (abreviação para a expressão inglesa HyperText Markup Language,
+            que significa: "Linguagem de Marcação de Hipertexto") é uma linguagem 
+            de marcação utilizada na construção de páginas na Web. Documentos HTML 
+            podem ser interpretados por navegadores.
+        </p>
+      <hr />
+        <h2 id="tags"> Tags HTML</h2>
+        <p> 
+            Os marcadores (tags do inglês) são comandos de formatação da linguagem e aparecem 
+            entre chaves angulares (< tag >). Enquanto o HTML é responsável pela formatação, 
+            o estilo da página é definido usando CSS o qual não será abordado aqui. 
+        </p>
+        <small><a href="#indice"> <u>(voltar)</u> </a></small>
+        <article>
+            <h3 id="estrutura">  Estrutura da página</h3>
+            <p> A estrutura básica da página contém os elementos <i>head</i> and <i>body</i></p>
+            <div id="code"> <code> &lt; !DOCTYPE html &gt; <br/>
+                &lt;html lang="pt-br" &gt; <br/>
+                &lt;head&gt; <br/>
+                
+                &lt;/head&gt; <br/>
+                &lt;body&gt; <br/>
+                
+                &lt;/body&gt; <br/>
+                &lt;/html&gt; </code></p>
+            </div>
+            <p> O DOCTYPE informa ao navegador o tipo do arquivo. A tag <i>html</i> define o inicio da página
+                e a tag <i>lang</i> o idioma da página. 
+            </p>
+            <p> 
+                No head ficam os <u>metadados</u>, que são informações que não aparecem na sua página
+                mas podem modificar a mesma. Por exemplo a tag <i>title</i> que é o título da página 
+                que aparece na aba do navegador. Aqui também se pode adicionar links para arquivos externos 
+                como um arquivo css.
+            </p>
+            <p>
+                No <i>body</i> ficam as tags e conteúdo que serão mostrados na sua página após a interpretada
+                pelo navegador.
+            </p>
+        </article>
+        <small><a href="#indice"> <u>(voltar)</u> </a></small>
+        <article>
+            <h3 id="semanticos"> Elementos semânticos</h3>
+            <p>
+                Com a evolução do HTML (já está na versão 5), foram introduzidos elementos semânticos 
+                que trazem informações sobre o conteúdo dos elementos para o navegador e o desenvolvedor.  
+            </p>
+            <p>
+                Um elemento como <b>&lt;div&gt;</b> não traz nenhuma informação sobre o conteúdo enquanto
+                elementos como <b>&lt;form&gt;</b>, <b>&lt;table&gt;</b>, <b>&lt;section&gt;</b> 
+                claramente definem o conteúdo.  
+            </p>
+            <p>
+                Por exemplo, dentro de <i>body</i> podemos dividir usando as tags <i>header</i>, que traz o cabeçalho da página,
+                <i>main</i>, com o conteúdo principal e <i>footer</i> com o rodapé. Dentro de <i>main</i> podemos dividir em <i>section</i>,
+                que compreende uma seção com conteúdos com mesmo tema ou sequenciais, e <i>article</i> que define cada conteúdo.  
+            </p>
+            <div id="code"> <code> &lt; body &gt; <br/>
+               
+                &lt;header&gt; <br/>
+                
+                &lt;/header&gt; <br/>
+                
+                &lt;main&gt; <br/>
+                
+                &nbsp; &lt;section&gt; <br/>
+                &nbsp;&nbsp;  &lt;article&gt; <br/>
+                
+                &nbsp;&nbsp;  &lt;/article&gt; <br/>
+                        
+                &nbsp;&nbsp; &lt;article&gt; <br/>
+                &nbsp;&nbsp;&lt;/article&gt; <br/>
+                        
+                &nbsp;&nbsp;&lt;article&gt; <br/>
+                &nbsp;&nbsp;&lt;/article&gt; <br/>
+
+                &nbsp;&lt;/section&gt; <br/>
+
+                &lt;/main&gt; <br/>
+                
+                &lt;footer&gt; <br/>
+                &lt;/footer&gt; <br/>
+                &lt;/body&gt; </code></p>
+            </div>
+            <p> 
+                Uma lista de elementos semânticos pode ser encontrada no site 
+                <a href="https://www.w3schools.com/html/html5_semantic_elements.asp"> w3schools</a>.
+            </p>
+        </article>
+        <small><a href="#indice"> <u>(voltar)</u> </a></small>
+        <article>
+            <h3 id="exemplos"> Exemplos de tags</h3>
+            
+            <p> 
+                Uma lista das tags pode ser encontrada no site 
+                <a href="https://www.w3schools.com/tags/"> w3schools</a>.
+            </p>
+
+            <ul> 
+                <li><i>&lt;h1&gt;, &lt;h2&gt; ... &lt;h6&gt;</i></h4>: Definem os títulos variando o tamanho da letra,
+                    &lt;h1&gt;, maior, para &lt;h6&gt; menor. 
+                </li>
+                <li><i>&lt;p&gt;</i>: parágrafo </li>
+                <li><i>&lt;br /&gt;</i>: quebra de linha </li>
+                <li><i>&lt;b&gt;, &lt;i&gt;, &lt;u&gt; e &lt;s&gt; </i>: negrito, itálico, sublinhado e riscado </li>
+                <li><i>&lt;a&gt;</i>: hiperlink, local ou para página externa </li>
+                <li><i>&lt;img&gt;</i>: imagem </li>
+                <li><i>&lt;video&gt;</i>: conteúdo de video </li>
+                <li><i>&lt;table&gt;</i>: tabela </li>
+                <li><i>&lt;ol&gt;</i>: lista ordenada </li>
+                <li><i>&lt;ul&gt;</i>: lista não ordenada </li>
+                <li><i>&lt;li&gt;</i>: item da lista </li>
+            </ul>
+            <small><a href="#indice"> <u>(voltar)</u> </a></small>
+        </article>
+        
+    </section>
+    </main> 
+     <footer>
+        <p>Página criada por Tiago Santiago</p>
+       </footer>
+</body>
+</html>
