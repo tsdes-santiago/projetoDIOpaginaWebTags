@@ -15,3 +15,7 @@ A ideia deste Desafio de Projeto é elaborar um website, utilizando uma estrutur
 # :bulb: Solução do desafio
 
 Desenvolvimento de uma página html5 para familiarização com as tags. A página está no arquivo index.html.
+
+Preview:
+
+<img src="pagina.png" />
